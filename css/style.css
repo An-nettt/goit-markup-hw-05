@@ -326,6 +326,28 @@ header {
     margin-right: 30px;
 }
 
+.work {
+    position: relative;
+    
+}
+
+.work-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--hero-text);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
 /* ---------------------------Команда-------------------------------- */
 .team {
     background-color: var(--secondary-bgc);
