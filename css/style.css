@@ -15,6 +15,7 @@
     --prymary-bgc: #FFFFFF;
     --secondary-bgc: #F5F4FA;
     --bgc-hero-footer: #2F303A;
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -105,6 +106,9 @@ header {
 }
 
 .site-nav .link {
+    transition: color var(--transition);
+
+
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -137,6 +141,8 @@ header {
 }
 
 .contacts .link {
+    transition: color var(--transition);
+
     display: flex;
     align-items: center;
     padding-top: 32px;
@@ -179,6 +185,8 @@ header {
 }
 
 .button.primary {    
+    transition: background-color var(--transition);
+
     padding: 10px 32px;
     min-width: 216px;
     border: transparent;
@@ -192,6 +200,8 @@ header {
 
 
 .button.secondary {
+    transition: background-color var(--transition), color var(--transition), box-shadow var(--transition);
+
     padding: 6px 22px;
     border: transparent;
 
@@ -208,7 +218,7 @@ header {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
     color: var(--hero-text);
-        background-color: var(--accent-color);
+    background-color: var(--accent-color);
 }
 
 
@@ -371,6 +381,8 @@ header {
 }
 
 .team-item .soc-link {
+    transition: background-color var(--transition);
+
     width: 100%;
     height: 100%;
     display: flex;
@@ -383,6 +395,8 @@ header {
 }
 
 .team-item .soc-icon {
+    transition: fill var(--transition);
+
     fill: currentColor;
 }
 
@@ -411,6 +425,8 @@ header {
 }
 
 .clients-link {
+    transition: border var(--transition);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -427,6 +443,8 @@ header {
 }
 
 .clients-logo {
+    transition: fill var(--transition);
+    
     fill: currentColor;
 }
 
@@ -475,6 +493,8 @@ header {
 }
 
 .projects .link {
+    transition: box-shadow var(--transition);
+
     display: inline-block;
 
     text-decoration: none;    
@@ -538,6 +558,8 @@ header {
 }
 
 .address {
+    transition: color var(--transition);
+    
     margin-right: 70px;
 
     color: var(--hero-text);
@@ -548,6 +570,8 @@ header {
 }
 
 .contacts-footer {
+    transition: color var(--transition);
+
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     font-size: 14px;
@@ -584,6 +608,8 @@ header {
 }
 
 .join-item .soc-link {
+    transition: background-color var(--transition);
+
     width: 100%;
     height: 100%;
     display: flex;
@@ -595,7 +621,7 @@ header {
     border-radius: 50%;
 }
 
-.join-item .soc-icon {    
+.join-item .soc-icon {  
     fill: currentColor;
 }
 
