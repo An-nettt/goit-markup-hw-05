@@ -138,8 +138,7 @@ header {
     position: absolute;
     display: inline-block;
     right: 0;
-    bottom: 0;
-
+    bottom: -1px;
 
     width: 100%;
     height: 4px;    
@@ -556,6 +555,8 @@ header {
     height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
     padding: 0px 24px;
+    display: flex;
+    align-items: center;
     transition: transform var(--transition), opacity var(--transition);
     transform: translateY(100%);
     font-size: 18px;
